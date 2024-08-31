@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CRUD || Prince Kumar</title>
+<link rel="shortcut icon" href="plogo.png" type="image/x-icon">
+<link rel="stylesheet" href="indexStyle.css" />
+</head>
+<body>
+	<h1>
+		<img alt="img" src="plogo.png" />
+		Student Login Form
+	</h1>
+	<div id="container">
+		<form name="form" action="operation.jsp" method="post">
+		<label for="id">Id</label>
+		<input type="number" name="id" />
+		<label for="name">Name</label>
+		<input type="text" name="name" />
+		<label for="password">Password</label>
+		<input type="password" name="password" />
+		<label for="email">E-mail</label>
+		<input type="email" name="email" />
+		<label for="mobile">Mobile</label>
+		<input type="number" name="mobile" />
+		<label for="address">Address</label>
+		<input type="text" name="address" />
+		<label>Update<input type="radio" name="yesno" onclick="yesnoCheck()" id="yescheck" />
+			No-Update<input type="radio" name="yesno" onclick="yesnoCheck()" id="nocheck" checked />
+		</label>
+		<hr />
+		<div id="ifyes">
+			<label for="newname">New Name</label> 
+			<input type="text" name="newname" />
+			<label for="newpassword">New Password</label> 
+			<input type="password" name="newpassword" />
+			<label for="newemail">New E-mail</label>
+			<input type="email" name="newemail" />
+			<label for="newmobile">New Mobile</label>
+			<input type="number" name="newmobile" />
+			<label for="newaddress">New Address</label>
+			<input type="text" name="newaddress" />
+		</div>
+		<div id="option">
+			<input type="submit" value="Insert" name="button" />
+			<input type="submit" value="Delete" name="button" />
+			<input type="submit" value="Update" name="button" />
+			<input type="submit" value="Display" name="button" />
+			<input type="reset" value="Reset" name="button" />
+		</div>
+	</form>
+	</div>
+	<footer><marquee>&copy; 2024 - 2026 All Reserved || By Prince Kumar</marquee></footer>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
